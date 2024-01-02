@@ -1,0 +1,98 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("mine.css");
+@import url("about.css");
+@import url("works.css");
+@import url("contacts.css");
+@import url("footer.css");
+@import url("social.css");
+
+$bg_color_body: #222831;
+$bg_color_button: #00adb5;
+$bg_color_button-dark: rgba(57, 62, 70, 0.75);
+$text_body: rgba(238, 238, 238, 0.75);
+$text_button: #eeeeee;
+$text_color-span: #00adb5;
+$text_color_mine: #eeeeee;
+$font_size_body: 18px;
+body {
+  font-family: "Poppins", "Halvetica Neue", Halvetica, sans-serif;
+  background-color: $bg_color_body;
+  color: $text_body;
+  font-size: $font_size_body;
+}
+
+[class*="__container"] {
+  max-width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  flex: 1 1 auto;
+  padding-top: 85px;
+}
+.page__main {
+}
+.page__about {
+}
+.page__works {
+}
+.page__contacts {
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.5; /* 96/64 */
+  color: $text_color_mine;
+}
+.title span {
+  color: $text_color-span;
+}
+@media (max-width: 991.98px) {
+  .title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 45px;
+  }
+}
+.button {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text_button;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  background-color: $bg_color_button;
+  transition: background-color 0.3s ease 0s;
+  &:hover {
+    background-color: $bg_color_button-dark;
+  }
+}
+.btn__dark {
+  background-color: $bg_color_button-dark;
+  backdrop-filter: blur(2px);
+  &:hover,
+  btn__dark.active {
+    background-color: $bg_color_button;
+  }
+}
+@media (max-width: 500px) {
+  .page {
+    padding-top: 73px;
+  }
+}

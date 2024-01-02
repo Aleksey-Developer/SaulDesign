@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>SaulDesign</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--===================HEADER========================-->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo"><img src="img/logo.svg" alt="logo" /></div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a data-goto=".main" href="#" class="menu__link">Home</a>
+              </li>
+              <li class="menu__item">
+                <a data-goto=".about_me" href="#" class="menu__link">About Me</a>
+              </li>
+              <li class="menu__item">
+                <a data-goto=".contacts" href="#" class="menu__link">Contact</a>
+              </li>
+            </ul>
+            <div class="menu__active"><span></span></div>
+          </nav>
+        </div>
+      </header>
+      <!--===================MAIN========================-->
+      <main class="page">
+        <!--===================Section Main========================-->
+        <section class="page__main main">
+          <div class="main__container">
+            <div class="main__content">
+              <h1 class="main__title">CREATIVE UI <span>DESIGNER</span></h1>
+              <div class="main__buttons">
+                <a href="#" class="button btn__hire-me">Hire me</a>
+                <a href="#" class="button btn__dark btn__download-cv"
+                  ><span>Download CV</span></a
+                >
+              </div>
+            </div>
+            <div class="main__img">
+              <img src="img/main/image.svg" alt="image" />
+            </div>
+          </div>
+        </section>
+        <!--===================Section AboutMe========================-->
+        <section class="page__about_me about_me">
+          <div class="about_me__container">
+            <div class="about_me__content">
+              <h1 class="about_me__title title">About <span>me</span></h1>
+              <div class="about_me__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Curabitur tempus urna at
+                  turpis condimentum lobortis
+                </p>
+              </div>
+            </div>
+            <div class="about_me__img">
+              <img src="img/about/image.svg" alt="Image" />
+            </div>
+          </div>
+        </section>
+        <!--===================Section Works========================-->
+        <section class="page__works works">
+          <div class="works__container">
+            <h2 class="works__title title">My recent <span>works</span></h2>
+            <div class="works__items items-works">
+              <nav class="items-works__navigation">
+                <button data-work-btn="" class="items-works__btn button btn__dark active btn_all">
+                  All
+                </button>
+                <button data-work-btn="ui" class="items-works__btn button btn__dark btn_UI">
+                  UI
+                </button>
+                <button data-work-btn="ux" class="items-works__btn button btn__dark btn_UX">
+                  UX
+                </button>
+                <button data-work-btn="webdesign" class="items-works__btn button btn__dark btn_web-design">
+                  Web Design
+                </button>
+              </nav>
+            </div>
+            <div class="items-works__body">
+              <a data-work-btn="ui" href="#" class="items-works__item"
+                ><div class="items-works__img">
+                  <img
+                    src="img/works/items/01.png"
+                    class="имя класса"
+                    alt="01"
+                  />
+                </div>
+              </a>
+              <a data-work-btn="ux" href="#" class="items-works__item"
+                ><div class="items-work__img">
+                  <img
+                    src="img/works/items/02.png"
+                    class="имя класса"
+                    alt="02"
+                  />
+                </div>
+              </a>
+              <a data-work-btn="webdesign" href="#" class="items-works__item"
+                ><div class="items-work__img">
+                  <img
+                    src="img/works/items/03.png"
+                    class="имя класса"
+                    alt="03"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--===================Section Contacts========================-->
+        <section class="page__contacts contacts">
+          <div class="contacts__container">
+            <div class="contacts__content">
+              <h2 class="contacts__title title">
+                Got a project in <span>mind?</span>
+              </h2>
+              <div class="contacts__img">
+                <img src="img/contacts/image.svg" alt="contacts/image.svg" />
+              </div>
+            </div>
+            <!--===================FORMA========================-->
+            <form action="#" class="contacts__form form">
+              <div class="form__item">
+                <label for="i-1" class="form__label">Your Name</label>
+                <input
+                  required
+                  type="text"
+                  class="form__input"
+                  placeholder="Name"
+                  name="name"
+                  id="i-1"
+                /></div>
+                <div class="form__item">
+                  <label for="i-2" class="form__label">Your Email</label>
+                  <input
+                    required
+                    type="text"
+                    class="form__input"
+                    placeholder="Email"
+                    name="email"
+                    id="i-2"
+                  />
+                </div>
+                <div class="form__item">
+                  <label for="i-2" class="form__label">Your Message</label>
+                  <textarea
+                    class="form__input"
+                    placeholder="Message"
+                    name="message"
+                    id="i-3"
+                  ></textarea>
+                </div>
+                <div class="form__item">
+                  <button type="submit" class="form__button button">
+                    <span>Send Message</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!--===================FOOTER========================-->
+      <footer class="footer">
+        <div class="footer__container">
+          <nav class="footer__menu menu">
+            <ul class="footer__list menu__list">
+              <li class="footer__item menu__item">
+                <a data-goto=".main" href="#" class="menu__link footer__link menu__link_home"
+                  >Home</a
+                >
+              </li>
+              <li class="footer__item footer__link menu__item">
+                <a data-goto=".about_me" href="#" class="menu__link footer__link menu__link_about"
+                  >About Me</a
+                >
+              </li>
+              <li class="footer__item menu__item">
+                <a data-goto=".contacts" href="#" class="menu__link footer__link menu__link_contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="menu__active"><span></span></div>
+          </nav>
+          <!--===================Footer Social========================-->
+          <div class="footer__social social">
+            <a class="social__link" href="">
+              <img src="img/icons/facebook.svg" alt="facebook" />
+            </a>
+            <a class="social__link" href="">
+              <img src="img/icons/instagram.svg" alt="instagram" />
+            </a>
+            <a class="social__link" href="">
+              <img src="img/icons/twitter.svg" alt="twitter" />
+            </a>
+            <a class="social__link" href="">
+              <img src="img/icons/youtube.svg" alt="youtube" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/js.js"></script>
+  </body>
+</html>
